@@ -1,0 +1,166 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <!-- The bill amount -->
+    
+  <TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/bill_amount_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_span="3"
+        android:ems="8"        
+        android:inputType="numberDecimal"
+        android:text="@string/bill_amount"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+    
+  </TableRow>
+
+    <!-- The tip percent -->
+    
+  <TableRow>
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tip_percent_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/tip_percent"
+        android:textSize="20sp" />
+
+  </TableRow>
+    
+    <!-- the tip amount -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentSeekBar"
+            android:layout_column="0"
+            android:max="30"
+            android:progress="15"
+            android:indeterminate="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:id="@+id/applyButton"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow>
+      
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tip_amount_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:padding="5dp"
+        android:text="@string/tip_amount"
+        android:textSize="20sp" />
+
+  </TableRow>
+    
+    <!-- the total -->
+    
+  <TableRow>
+
+  </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/total_amount_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_column="0" />
+
+        <TextView
+          android:id="@+id/totalTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:padding="5dp"
+          android:text="@string/total_amount"
+          android:textSize="20sp"
+            android:layout_column="1" />
+    </TableRow>
+
+</TableLayout>
